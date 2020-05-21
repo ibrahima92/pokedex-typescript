@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #333;
+    line-height: 1.5;
+    font-family: 'Caveat', cursive;
+}
+
+main {
+    padding: 1rem;
+    max-width: 1100px;
+    margin: auto;
+}
+
+main > h1 {
+    text-align: center;
+    color: #e4c439;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+#app {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 12rem auto;
+    background: #444;
+    color: #e4c439;
+    padding: 1rem;
+    border-radius: 10px;
+    border-top: 0.5px solid #cebf7b;
+    border-bottom: 0.5px solid #cebf7b;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.2s ease-in-out all;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card--id {
+    background: #cebf7b;
+    width: 3rem;
+    color: #333;
+    padding: 0.1rem;
+    font-weight: 700;
+    position: absolute;
+    border-radius: 0 0 10px 0;
+    top: 0;
+    left: 0;
+}
+.card--name {
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.card--image {
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+.card--details {
+    font-size: 1.3rem;
+    color: #dbca80;
+}
